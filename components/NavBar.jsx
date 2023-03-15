@@ -1,13 +1,15 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImCross } from 'react-icons/im'
 
 const NavBar = () => {
     const [showNav, setShowNav] = useState(false)
+    const router = useRouter()
     return (
         <nav>
-            <div className="logo">WS</div>
+            <div className="logo" onClick={() => router.push('/')}>WS</div>
             <div className="menu-button">
                 {showNav ? <ImCross onClick={() => setShowNav(false)} /> :
                     <GiHamburgerMenu onClick={() => setShowNav(true)} />}

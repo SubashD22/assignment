@@ -37,6 +37,7 @@ nav{
 .logo{
   font-weight: 900;
   color: #e09145;
+  cursor: pointer;
 }
 .nav-links{
   position: absolute;
