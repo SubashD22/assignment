@@ -19,7 +19,7 @@ const Contact = () => {
     return (
         <div className="contact">
             <section>
-                <h1>Let's Chat</h1>
+                <h1>Let&apos;s Chat</h1>
                 <form ref={form} onSubmit={sendEmail}>
                     <div className='Name'>
                         <label htmlFor="name">Name</label>

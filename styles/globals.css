@@ -32,6 +32,11 @@ nav{
   top: 0;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-weight: 900;
+  color: #e09145;
 }
 .nav-links{
   position: absolute;
@@ -60,6 +65,9 @@ nav{
 .nav-links a:active{
   color: #e09145;
 }
+.nav-links a:hover{
+  color: #fcd9b8;
+}
 nav .active{
   width: 100%;
 }
@@ -81,7 +89,6 @@ footer{
 }
 .hero-content{
   margin: 5.2rem 1rem;
-  margin-left: 1rem
 }
 .hero-content h1{
   font-size: 3rem;
@@ -125,7 +132,7 @@ footer{
   margin: 6rem 2rem 6rem;
   text-align: left;
 }
-.important p, .mission p, .values p,.values ul{
+.important p, .mission p, .values p,.values ul li{
   line-height: 1.5rem;
   font-size: 1.3rem;
   letter-spacing: 0.05rem;
@@ -159,6 +166,7 @@ footer{
   font-size: 3rem;
 }
 
+
 form input, form textarea{
   display: block;
   margin-top: 0.7rem;
@@ -189,7 +197,11 @@ form {
   margin-top: 1.5rem;
   display:flex;
   flex-direction: column;
-  gap: 2rem
+  gap: 2rem;
+  overflow: hidden !important
+}
+.contact::-webkit-scrollbar,.about::-webkit-scrollbar,.services::-webkit-scrollbar,.blogposts::-webkit-scrollbar,.post::-webkit-scrollbar {
+  display: none;
 }
 .blogposts h1{
   text-align: center;
@@ -231,4 +243,99 @@ form {
   text-decoration-color:#e09145 ;
   text-decoration-thickness: 3px ;
 }
-
+.services img,.hero-image{
+  max-width: 522px;
+}
+/*media queries */
+/* SMALL */
+@media screen and (min-width: 576px) {
+.hero-content{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.hero-content .image-container{
+  margin-top: 5.5rem
+}
+.blogcard{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+form textarea{
+  max-width: 360px;
+}
+}
+/*  MEDIUM */
+@media screen and (min-width: 768px){
+  .nav-links{
+    width: auto;
+    flex-direction: row;
+    position: relative;
+    top:0;
+    height: auto;
+    background-color: #17181d;
+  }
+  .nav-links a{
+    margin: 0.5rem;
+  }
+  
+  .menu-button{
+    display: none;
+  }
+  form {
+    margin-top: 4.5rem;
+  }
+  form button{
+    margin-left: 0;
+  }
+  .services article div{
+    margin: 3rem;
+    display: flex;
+  }
+  .services article div:nth-child(odd){
+    flex-direction: row;
+  }
+  .services article div:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  .post,.about,.hero-content{
+    margin: 6rem 4rem;
+  }
+  .post p,.important p, .mission p, .values p,.values ul{
+    font-size: 1.5rem;
+  }
+  .post h1{
+    font-size: 3rem;
+  }
+  .post h3{
+    font-size: 2rem;
+  }
+  .post p{
+    margin:2.5rem 0
+  }
+}
+/* || LARGE */
+@media screen and (min-width: 992px) {
+  
+}
+/* || XL  */
+@media screen and (min-width: 1200px) {
+  .hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .hero-content{
+    display: flex;
+    align-items: center;
+  }
+  .hero-content,.about, .services,.contact, .blogposts,.post{
+    max-width: 1200px;
+  }
+  .about, .services,.contact, .blogposts,.post{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+ }

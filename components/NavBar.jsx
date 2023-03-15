@@ -7,7 +7,7 @@ const NavBar = () => {
     const [showNav, setShowNav] = useState(false)
     return (
         <nav>
-            <div className="logo">LOGO</div>
+            <div className="logo">WS</div>
             <div className="menu-button">
                 {showNav ? <ImCross onClick={() => setShowNav(false)} /> :
                     <GiHamburgerMenu onClick={() => setShowNav(true)} />}
