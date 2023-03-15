@@ -7,7 +7,7 @@ const BlogCard = () => {
         <div className="blogcard">
             <div className="cardcontent">
                 <h2>Why Everyone Should Have a Website</h2>
-                <p>In today's digital age, a website is an essential tool for anyone who wants to be successful in business. A well-designed website can help <span
+                <p>In today&apos;s digital age, a website is an essential tool for anyone who wants to be successful in business. A well-designed website can help <span
                     onClick={() => router.push('/blog/1')}>...continue reading</span></p>
                 <div className='details'>
                     <p className="author">

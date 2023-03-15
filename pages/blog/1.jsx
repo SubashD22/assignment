@@ -7,7 +7,7 @@ const Post = () => {
                 <h1>
                     Why Everyone Should Have a Website
                 </h1>
-                <p>In today's digital age, a website is an essential tool for anyone who wants to be successful in business. A well-designed website can help you to:</p>
+                <p>In today&apos;s digital age, a website is an essential tool for anyone who wants to be successful in business. A well-designed website can help you to:</p>
                 <h3>
                     Attract new customers.
                 </h3>
@@ -30,7 +30,7 @@ const Post = () => {
                 <p>
                     A website can also be used to communicate with customers and clients. You can use your website to post news and updates, answer questions, and provide customer support.
                 </p>
-                <p>If you don't have a website, now is the time to create one. A well-designed website can help you to achieve your business goals and grow your business.</p>
+                <p>If you don&apos;t have a website, now is the time to create one. A well-designed website can help you to achieve your business goals and grow your business.</p>
 
                 <p>Here are some of the benefits of having a website:</p>
 
