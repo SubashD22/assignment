@@ -317,10 +317,6 @@ form textarea{
 }
 /* || LARGE */
 @media screen and (min-width: 992px) {
-  
-}
-/* || XL  */
-@media screen and (min-width: 1200px) {
   .hero{
     display: flex;
     align-items: center;
@@ -331,6 +327,10 @@ form textarea{
     display: flex;
     align-items: center;
   }
+}
+/* || XL  */
+@media screen and (min-width: 1200px) {
+  
   .hero-content,.about, .services,.contact, .blogposts,.post{
     max-width: 1200px;
   }
