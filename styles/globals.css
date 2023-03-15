@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  color: whitesmoke;
 }
 img{
   display: block;
@@ -16,11 +17,11 @@ img{
 }
 .body{
   flex: 1;
+  background-color: #484849;
 }
 nav,footer{
   background-color: #17181d;
-  color: white;
-  position: sticky;
+  position: fixed
 }
 nav{
   display: flex;
@@ -32,7 +33,7 @@ nav{
 .nav-links{
   position: absolute;
   top: 50px;
-  background-color: #17181d;
+  background-color: #292c35;
   right: 0px;
   width:0;
   text-align: center;
@@ -46,7 +47,7 @@ nav{
   cursor: pointer;
 }
 .nav-links a{
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   display: block;
   margin: 1rem;
@@ -64,7 +65,6 @@ footer{
   align-items: center;
   padding: 1rem;
   background-color: #17181d;
-  color: white;
 }
 /* hero */
 .hero{
@@ -72,7 +72,7 @@ footer{
   flex-direction: column;
 }
 .hero-content{
-  margin: 3.5rem 1rem;
+  margin: 5.2rem 1rem;
   margin-left: 1rem
 }
 .hero-content h1{
@@ -95,7 +95,10 @@ footer{
   display: block;
   font-size: inherit;
   padding: 0.7rem 0.5rem;
-  border: 2px solid black
+  color: #17181d;
+  background-color: #fcd9b8;
+  border: 2px solid #e09145;
+  cursor: pointer;
 }
 .image-container{
   width: 100%;
@@ -109,22 +112,43 @@ footer{
 }
 
 /* About */
-.about{
+.about, .services,.contact{
   overflow: scroll;
-  margin: 1.5rem 2rem 6rem;
-  text-align: center;
+  margin: 6rem 2rem 6rem;
+  text-align: left;
 }
 .important p, .mission p, .values p,.values ul{
   line-height: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 0.05rem;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 .values span{
   font-weight: bold;
 }
-.values p,.values ul {
-  text-align: left;
+
+.important h1, .mission h1, .values h1,
+.services article div h1{
+  font-size: 3.2rem;
+  text-decoration: underline;
+  text-decoration-color:#e09145 ;
+  text-decoration-thickness: 5px ;
+}
+.services article div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
+  margin-bottom: 3rem;
+}
+.services article div h1{
+  text-align: center;
+  font-size: 2rem;
+  text-underline-offset: 10px
+}
+.contact section h1{
+  font-size: 3rem;
 }
 
 

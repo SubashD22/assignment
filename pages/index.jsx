@@ -22,7 +22,7 @@ export default function Home() {
               <button>Contact us</button>
             </div>
             <div className="image-container">
-              <img className='hero-image' src="/undraw_web_devices_re_m8sc (1).svg" />
+              <img className='hero-image' src="/undraw_web_devices_re_m8sc (2).svg" />
             </div>
 
           </div>
